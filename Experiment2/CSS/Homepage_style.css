@@ -1,0 +1,431 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	/* 盒子模型 */
+	list-style: none;	/* 设置列表项目样式为不使用项目符号 */
+}
+
+body {
+	margin: 0;
+	background-color: #E9F4F7;
+}
+
+/* header */
+.header {
+	position: fixed;	/* 相对视口定位，即使页面滚动也会停留在某个地方 */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 68px;
+	background-color: #FFFFFF;
+}
+
+.header_main {
+	height: 100%;
+	padding: 0.8em;
+	position: relative;
+	display: flex;	/* 弹性布局 */
+	align-items: center;	/* 交叉轴的中点对齐 */
+	justify-content: space-between;		/* 两端对齐 */
+}
+
+/* 顶部放置图片的div */
+.header_logo {
+	height: 68px;
+	positon: relative;
+	overflow: hidden;	/* 溢出隐藏 */
+}
+
+/* 顶部中间内容的div */
+.header_nav {
+	position: absolue;		/* 相对最近的定位祖先元素（.header_main）进行定位 */
+	left: 30%;
+	text-align: right;
+	display: block;
+}
+
+.header_nav_main {
+	display: flex;
+	align-items: center;
+	color: #496AF0;
+}
+
+/* 顶部的li */
+.header li {
+	width: auto;
+}
+
+/* 顶部中间表单的文本框 */
+.header input[type="text"] {
+	height: 50px;
+	width: 300px;
+	font-size: 20px;
+	padding-left: 10px;
+	border: 2px solid #496AF0;
+	border-radius: 5px;
+}
+
+button {
+	border: 2px solid #496AF0;
+	background: transparent;
+	color: #496AF0;
+	border-radius: 15px;
+}
+
+/* 顶部中间的提交按钮 */
+.search {
+	height: 50px;
+	width: 100px;
+	font-size: 25px;
+	text-align: center;
+	padding: 10px auto;
+	border: 2px solid #496AF0;
+	background: transparent;
+	color: #496AF0;
+	border-radius: 5px;
+}
+
+/* 顶部右侧的普通按钮 */
+.header button {
+	height: 50px;
+	width: 100px;
+	font-size: 25px;
+	text-align: center;
+	padding: 10px auto;
+}
+
+/* 当鼠标悬浮在顶部的普通按钮时 */
+button:hover:not(.active) {
+	color: #FFFFFF;
+	background: #496AF0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction:row;		/* 主轴为水平方向，起点在左端 */
+}
+
+.header_nav_main>li {
+	font-size: 35px;
+	position: relative;
+	font-weight: 500;
+	line-height: 1px;
+}
+
+.header_actions {
+	display: flex;
+	flex-direction: row;
+}
+
+.header_actions1 button {
+	width: 150px;
+}
+
+.header_blank {
+	height: 68px;
+}
+
+.tupian {
+	width: 100%;
+}
+
+.tupian img {
+	width: 100%;
+}
+
+/* nav */
+.nav {
+	height: 70px;
+	background-color: #005CC1;
+}
+
+.nav li {
+	font-size: 20px;
+	text-align: center;
+}
+
+li a {
+	height: 70px;
+	display: block;
+	color: #FFFFFF;
+	padding: 21px 16px;
+}
+
+li a:hover:not(.active) {
+	background-color: #007AFF;
+}
+
+.nav ul li a.active {
+	background-color: #1799FD;
+	color: #FFFFFF;
+}
+
+a {
+	colo: #FFFFFF;
+	text-decoration: none;
+}
+
+/* main */
+/* 主体中的左侧内容 */
+.left {
+	height: 400px;
+	width: 300px;
+	margin: 20px 5px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+	float: left;	/* 左浮动 */
+}
+
+/* 左侧个人信息模块的div */
+.personal_Info {
+	margin: auto;
+	align-items: center;
+}
+
+/* 左侧个人信息模块的图片 */
+.left img {
+	height: 100px;
+}
+
+/* 左侧ul的div */
+.left_ul {
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;		/* 主轴时垂直方向，起点在上沿 */
+}
+
+/* 左侧个人信息模块的表格单元格 */
+.left table td {
+	height: 45px;
+	text-align: center;
+}
+
+/* 左侧个人信息模块的button */
+.left button {
+	height: 30px;
+	width: 100px;
+	color: #FFFFFF;
+	background: #005CC1;
+}
+
+/* 鼠标悬浮在左侧个人信息模块的button上时 */
+.left button:hover:not(.active) {
+	color: #FFFFFF;
+	background: #1799FD;
+} 
+
+/* 主体中的中间内容 */
+.middle {
+	heigh: auto;
+	width: 630px;
+	margin: 20px 5px;
+	padding: 5px;
+	background-color: #E5EEF1;
+	border-radius: 5px;
+	float: left;	/* 左浮动 */
+}
+
+/* 中间内容的div */
+.hospital_info {
+	height: auto;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 20px 10px;
+}
+
+/* 中间内容的h3 */
+.hospital_info h3 {
+	display: block;
+	height: 70px;
+	margin: 0 10px;
+	padding: 17px 20px;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.hospital_info p {
+	margin-top: 20px;
+	text-indent: 2em;	/* 缩进 */
+	font-size: 20px;
+}
+
+p {
+	line-height: 2em;
+	word-break: break-word;
+}
+
+/* 主体中右侧的内容 */
+.right {
+	height: auto;
+	width: 289px;
+	margin: 20px 5px;
+	padding: 5px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	float: left;	/* 左浮动 */
+}
+
+/* 右侧的div */
+.right div {
+	padding: 5px 20px;
+}
+
+.right p {
+	margin-top: 20px;
+	text-indent: 2em;
+	font-size: 20px;	
+}
+
+/* footer */
+.footer {
+	clear: both;	/* 清除浮动 */
+	padding: 3em 0;
+	background: #4682B4;
+}
+
+/* 底部的图片 */
+.footer img {
+	height: 200px;
+}
+
+.footer h3 {
+	color: #FFFFFF;
+	font-size: 2em;
+	margin: 0;
+	letter-spacing: 2px;	/* 字符间距 */
+}
+
+/* 底部左侧的表单 */
+.footer-left form {
+	mardin-top: 3em;
+}
+
+/* 底部左侧表单中的文本框 */
+.footer-left input[type="text"] {
+	width: 100%;
+	color: #F5F5F5;
+	background: none;
+	outline: none;		/* 使绘制于文本框周围的一条线无效 */
+	font-size: .9em;
+	padding: .5em;
+	margin-buttom: 2em;
+	norder-buttom: 1px solid #D3D3D3;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+/* 底部左侧表单中的提交按钮 */
+.footer-left input[type="submit"] {
+	border: none;
+	outline: none;
+	color: #FFFFFF;
+	padding: .5em 1.5em;
+	font-size: 16px;
+	margin: 0.5em 0 0 0;
+	background: #005CC1;
+	border-radius: 5px;
+}
+
+.footer-left input[type="submit"]:hover:not(.active) {
+	color: #FFFFFF;
+	background: #1799FD;
+}
+
+/* 底部中间的h3 */
+.footer-middle h3 {
+	color: #FFFFFF;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+/* 底部中间文字 */
+.address p span {
+	display: block;
+}
+
+.phone {
+	margin-top: 2em;
+}
+
+.phone p {
+	color: #FFFFFF;
+	font-size: .9em;
+	line-height: 1.8em;
+	padding-left: 3em;
+	margin: 2em 0 0 0;
+}
+
+.container {
+	padding: auto 15px;
+	margin: auto;
+}
+
+/* 底部右侧的超链接 */
+.f_logo a {
+	color: #FFFFFF;
+	font-size: 6em;
+	letter-spacing: 2px;
+	line-height: 1em;
+}
+
+/* 页面宽度大于1200px时 */
+@media (min-width: 1220px){
+	.container {
+		width: 1170px;
+	}
+}
+
+.col-md-3,.col-md-6 {
+	position: relative;
+	min-height: 1px;
+	padding: auto 15px;
+}
+
+/* 页面宽度大于992px时 */
+@media (min-width: 992px) {
+	.col-md-3,.col-md-6 {
+		float: left;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+}
+
+.container:after {
+	content: " ";	/* 添加一个空的伪元素 */
+	display: block;
+	clear: both;	/* 清除浮动 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

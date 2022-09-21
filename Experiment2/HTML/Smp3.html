@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>共青团成立一百周年主题网站</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Smp3_.css">
+</head>
+<body>
+<div class="header">
+    <h1>共青团成立一百周年主题网站</h1>
+</div>
+
+<div class="navbar">
+    <a href="https://www.gqt.org.cn/" target="_blank" rel="noopener noreferrer">中国共青团官网</a>
+    <a href="https://qnzz.youth.cn/qckc/202209/t20220901_13966128.htm" target="_blank" rel="noopener noreferrer">揭秘不为人熟知的团史</a>
+    <a href="#" class="right">Made by 2030502151</a>
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>共青团简介</h2>
+        <p style="font-family: Arial;color: cornflowerblue;font-size: 30px">
+            中国共产主义青年团是中国共产党领导的先进青年的群团组织，是广大青年在实践中学习中国特色社会主义和共产主义的学校，是中国共产党的助手和后备军。中国共产党领导是中国特色社会主义最本质的特征，是中国特色社会主义制度的最大优势。中国共产主义青年团坚决拥护中国共产党的纲领，以马克思列宁主义、毛泽东思想、邓小平理论、“三个代表”重要思想、科学发展观、习近平新时代中国特色社会主义思想为行动指南</p>
+        <img src="../Picture/1.jpg" alt="共青团微博头像" width="180" height="180">
+    </div>
+    <div class="main">
+        <h1 style="color: gold">共青团贡献事迹</h1>
+        <p style="font-family: Gabriola;color: orchid;font-size: medium">
+            1920年，中国共产党的主要创始人陈独秀、李大钊决定筹划建立青年团。上海、北京、武汉、长沙、广州等地的中共早期组织创建之后，均发起或指导建立了当地的青年团早期组织。1921年中共一大召开，专门研究了在各地建立和发展社会主义青年团作为党的预备学校的问题，还研究决定了吸收优秀青年团员参加共产党的办法。
+            1922年5月，在中国共产党直接领导下，中国社会主义青年团第一次全国代表大会在广州东园召开，翻开了中国青年运动新的历史篇章。
+            1922年，一个名叫方志敏的青年加入了中国社会主义青年团。团员调查表中，他在“对于现在社会作何感想”这一栏里这样写道：除了革命，再无他想。1924年3月，方志敏转为中国共产党党员。1935年，方志敏不幸被捕。在狱中面对敌人的严刑和诱降，他坚贞不屈，写下了《可爱的中国》《清贫》等著名篇章，给无数华夏儿女以巨大的精神鼓舞。
+            中国社会主义青年团的成立，是中国共产党主动谋划、积极推动、全程指导的结果，是五四运动以后觉醒的中国青年在党的领导和共产主义旗帜下集结起来、向着未来进军的伟大誓师，标志着中国青年运动进入了一个新阶段，对于团结带领中国青年投身中华民族复兴伟业，产生了强大推动作用和深远历史影响。
+        </p>
+        <br>
+        <h2>团史微故事_ 共青团的三次“改名”</h2>
+        <div style="text-align:center">
+            <button onclick="playPause()">播放/暂停</button>
+            <button onclick="makeBig()">放大</button>
+            <button onclick="makeSmall()">缩小</button>
+            <button onclick="makeNormal()">普通</button>
+            <br>
+            <video id="video1" width="420">
+                <source src="../Video/1.mp4" type="video/mp4">
+                您的浏览器不支持 HTML5 video 标签。
+            </video>
+        </div>
+        <script>
+            var myVideo = document.getElementById("video1");
+
+            function playPause() {
+                if (myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+            function makeBig() {
+                myVideo.width = 560;
+            }
+
+            function makeSmall() {
+                myVideo.width = 320;
+            }
+
+            function makeNormal() {
+                myVideo.width = 420;
+            }
+        </script>
+    </div>
+</div>
+
+<div class="footer">
+    <h6>紫苏鱼设计</h6>
+</div>
+</body>
+</html>
